@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Go-Cart.io Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" type="image/png" href="/_media/favicon.png" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    .app-name-link img {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      logo: '/_media/gocart_final.svg',
+      name: 'go-cart.io',
+      nameLink: 'https://go-cart.io',
+      repo: 'go-cart-io/cartogram-web',
+      homepage: 'about.md',
+      routerMode: 'history', // default: 'hash'
+      auto2top: true,
+      loadSidebar: true,
+      subMaxLevel: 2,
+      alias: {
+        '/offline': 'https://raw.githubusercontent.com/go-cart-io/cartogram-docker/refs/heads/main/README.md',
+      },
+      themeColor: '#d76127',
+      plugins: [
+        function (hook, vm) {
+          hook.doneEach(function () {
+            // Invoked each time after the data is fully loaded, no arguments,
+            document.title += ' | go-cart.io';
+          });
+        }
+      ]
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>
