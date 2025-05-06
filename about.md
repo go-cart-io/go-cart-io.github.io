@@ -6,20 +6,24 @@ Creating cartograms has traditionally been a complex endeavour that required exp
 
 # Why go-cart.io?
 
-In the past, the creation of contiguous cartograms was far from user-friendly. Even experts in data visualisation found it difficult and time-consuming to learn the required computer skills. Scientific publications that introduced new cartogram algorithms rarely included computer code. Some authors of more recent publications have posted their code online (e.g. in this GitHub repo), but their software usually assumes technical knowledge about shell scripting, compiling and geographic data structures. These prerequisites pose insurmountable obstacles for most users. The aim of go-cart.io is to simplify cartogram generation. With a simple interface, we want to eliminate hurdles for non-experts and provide a convenient way to create readable cartograms.
+In the past, the creation of contiguous cartograms was far from user-friendly. Even experts in data visualisation found it difficult and time-consuming to learn the required computer skills. Scientific publications that introduced new cartogram algorithms rarely included computer code. Some authors of more recent publications have posted their code online (e.g. in [this GitHub repo](https://github.com/Flow-Based-Cartograms/go_cart)), but their software usually assumes technical knowledge about shell scripting, compiling and geographic data structures. These prerequisites pose insurmountable obstacles for most users. The aim of go-cart.io is to simplify cartogram generation. With a simple interface, we want to eliminate hurdles for non-experts and provide a convenient way to create readable cartograms.
 
 # How does go-cart.io Work?
 
-While previous cartogram generators required users to install software on their computer, go-cart.io is based on JavaScript that can be run in any contemporary web browser without additional downloads. We decided to simplify the data input as much as possible. We have curated a ‘library’ of topologies so that users do not need GIS expertise to create geospatial vector data. After data are transmitted, a remote server calculates the cartogram transformation with the fast flow-based algorithm [1]. Because the calculation is entirely server-side, we eliminate any dependence on the client's hardware. For typical input, the calculation finishes within 10 to 15 seconds. The cartogram is displayed in the browser window side by side with the conventional (i.e. equal-area) map. The user can explore both maps with various interactive features implemented using the Vue.js, D3.js [2], and Vega [3] library.
+While previous cartogram generators required users to install software on their computer, go-cart.io can be run in any contemporary web browser without additional downloads. A user can select an appropriate map from our curated library or upload own boundary file (.geojson; .shp, .shx, and .dbf in zip). Then, the user can specify visualization and input own data. After data are transmitted, a remote server calculates the cartogram transformation with the fast flow-based algorithm. Because the calculation is entirely server-side, we eliminate any dependence on the client's hardware. For typical input, the calculation finishes within 10 to 15 seconds. The cartogram is displayed in the browser window side by side with the conventional (i.e. equal-area) map. The user can explore both maps with various interactive features.
+
+> For more information, please see [Quick Start](/quick-start) and [Tutorials](/tutorials).
 
 # What is the Fast Flow-based Algorithm?
 
-One way to create a contiguous cartogram is to create a map projection that transforms every coordinate on a conventional map such that the projected regions on the cartogram have the desired areas. The fast flow-based algorithm translates the cartographic deformations into physics-inspired equations of motion. The basic idea is to allow densely populated regions to flow into regions with lower population. The equations guarantee that we reach the desired areas at the end of the flow process and that neighbouring regions stay connected. In our paper [1], we describe several mathematical and computational tricks that speed up the calculation.
+One way to create a contiguous cartogram is to create a map projection that transforms every coordinate on a conventional map such that the projected regions on the cartogram have the desired areas. The fast flow-based algorithm translates the cartographic deformations into physics-inspired equations of motion. The basic idea is to allow densely populated regions to flow into regions with lower population. The equations guarantee that we reach the desired areas at the end of the flow process and that neighbouring regions stay connected. We describe several mathematical and computational tricks that speed up the calculation in our [Research Publications](/research).
 
-# References
+# Acknowledgment
 
-[1] Gastner, M. T., Seguy, V., & More, P. (2018). Fast flow-based algorithm for creating density-equalizing map projections. Proceedings of the National Academy of Sciences, 115(10), E2156-E2164.
+This website is supported by the following grant(s). Any opinions, findings, and conclusions or recommendations expressed in this material do not reflect the views of the grant provider.
 
-[2] Bostock, M., Ogievetsky, V., & Heer, J. (2011). D³ data-driven documents. IEEE transactions on visualization and computer graphics, 17(12), 2301-2309.
+- Ministry of Education, Singapore, under its Academic Research Fund Tier 2 (EP2) programme (Award No. MOE-T2EP20221-0007)
 
-[3] Satyanarayan, A., Wongsuphasawat, K., & Heer, J. (2014, October). Declarative interaction design for data visualization. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 669-678).
+We also extend our thanks to everyone who has contributed to go-cart.io and its related projects!
+
+[filename](contributors.md ":include")

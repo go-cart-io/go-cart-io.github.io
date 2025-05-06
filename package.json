@@ -1,0 +1,13 @@
+{
+  "name": "go-cart-io.github.io",
+  "version": "1.0.0",
+  "description": "go-cart.io guides",
+  "scripts": {
+    "gen-contributors": "node tools/gen-contributors.js"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "auto-changelog": "^2.5.0",
+    "github-contributors-list": "^1.2.5"
+  }
+}

@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="icon" type="image/png" href="/_media/favicon.png" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css" />
+  <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
+  <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
+  <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
   <style>
     .app-name-link img {
       width: 100px;
@@ -26,11 +30,13 @@
       routerMode: 'history', // default: 'hash'
       auto2top: true,
       loadSidebar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       alias: {
-        '/offline': 'https://raw.githubusercontent.com/go-cart-io/cartogram-docker/refs/heads/main/README.md',
+        '/tutorials/local': 'https://raw.githubusercontent.com/go-cart-io/cartogram-docker/refs/heads/main/README.md',
+        '/tutorials/cmd': 'https://raw.githubusercontent.com/mgastner/cartogram-cpp/refs/heads/main/README.md',
       },
       themeColor: '#d76127',
+      search: 'auto', // default
       plugins: [
         function (hook, vm) {
           hook.doneEach(function () {
@@ -43,5 +49,10 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
 </body>
 </html>
