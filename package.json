@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "go-cart.io guides",
   "scripts": {
+    "dev": "docsify serve .",
     "gen-contributors": "node tools/gen-contributors.js"
   },
   "license": "GPL-3.0",
