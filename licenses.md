@@ -1,6 +1,6 @@
 # Licenses
 
-- **Source Code**: Licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+- **Source Code**: Licensed under [MIT](https://mit-license.org/)
 - **Output Data/Cartograms and Documents**: Licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 # Attribution Guidelines
