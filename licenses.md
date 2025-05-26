@@ -93,28 +93,61 @@ TODO...
 
 ## Python (for backend)
 
-| Library         | Link                                     | License                     |
-| --------------- | ---------------------------------------- | --------------------------- |
-| Flask           | https://flask.palletsprojects.com/       | BSD-3-Clause                |
-| Flask-Cors      | https://corydolphin.com/flask-cors/      | MIT                         |
-| Flask-Migrate   | https://flask-migrate.readthedocs.io/    | MIT                         |
-| Flask-Limiter   | https://flask-limiter.readthedocs.io/    | MIT                         |
-| SQLAlchemy      | https://www.sqlalchemy.org/              | MIT                         |
-| psycopg2-binary | https://www.psycopg.org/                 | GNU or LGPL with exceptions |
-| redis           | https://redis-py.readthedocs.io/         | MIT                         |
-| gunicorn        | https://gunicorn.org/                    | MIT                         |
-| validate_email  | https://pypi.org/project/validate_email/ | LGPL                        |
-| captcha         | https://pypi.org/project/captcha/        | BSD-3-Clause                |
-| py-bcrypt       | https://code.google.com/p/py-bcrypt      | BSD                         |
-| shapely         | https://shapely.readthedocs.io/          | BSD-3-Clause                |
-| geopandas       | https://geopandas.org/                   | BSD-3-Clause                |
-| pandas          | https://pandas.pydata.org/               | BSD-3-Clause                |
-| mapclassify     | https://pysal.org/mapclassify/           | BSD-3-Clause                |
-| libpysal        | https://pysal.org/libpysal/              | BSD-3-Clause                |
+| Library          | Link                                     | License                     |
+| ---------------- | ---------------------------------------- | --------------------------- |
+| Flask            | https://flask.palletsprojects.com/       | BSD-3-Clause                |
+| Flask-Cors       | https://corydolphin.com/flask-cors/      | MIT                         |
+| Flask-Migrate    | https://flask-migrate.readthedocs.io/    | MIT                         |
+| Flask-Limiter    | https://flask-limiter.readthedocs.io/    | MIT                         |
+| Flask-SQLAlchemy | https://palletsprojects.com/             | BSD-3-Clause                |
+| SQLAlchemy       | https://www.sqlalchemy.org/              | MIT                         |
+| psycopg2-binary  | https://www.psycopg.org/                 | GNU or LGPL with exceptions |
+| types-redis      | https://github.com/python/typeshed       | Apache-2.0                  |
+| redis            | https://redis-py.readthedocs.io/         | MIT                         |
+| gunicorn         | https://gunicorn.org/                    | MIT                         |
+| validate_email   | https://pypi.org/project/validate_email/ | LGPL                        |
+| captcha          | https://pypi.org/project/captcha/        | BSD-3-Clause                |
+| bcrypt           | https://github.com/pyca/bcrypt/          | Apache-2.0                  |
+| shapely          | https://shapely.readthedocs.io/          | BSD-3-Clause                |
+| geopandas        | https://geopandas.org/                   | BSD-3-Clause                |
+| pandas           | https://pandas.pydata.org/               | BSD-3-Clause                |
+| mapclassify      | https://pysal.org/mapclassify/           | BSD-3-Clause                |
+| libpysal         | https://pysal.org/libpysal/              | BSD-3-Clause                |
 
 ## Javascript (for development)
 
-TODO...
+| Library                       | Link                                                             | License    |
+| ----------------------------- | ---------------------------------------------------------------- | ---------- |
+| @playwright/test              | https://playwright.dev/                                          | Apache-2.0 |
+| @tsconfig/node22              | https://github.com/tsconfig/bases                                | MIT        |
+| @types/bootstrap              | https://github.com/DefinitelyTyped/DefinitelyTyped               | MIT        |
+| @types/d3                     | https://github.com/DefinitelyTyped/DefinitelyTyped               | MIT        |
+| @types/geojson                | https://github.com/DefinitelyTyped/DefinitelyTyped               | MIT        |
+| @types/jsdom                  | https://github.com/DefinitelyTyped/DefinitelyTyped               | MIT        |
+| @types/node                   | https://github.com/DefinitelyTyped/DefinitelyTyped               | MIT        |
+| @vitejs/plugin-vue            | https://github.com/vitejs/vite-plugin-vue                        | MIT        |
+| @vitest/eslint-plugin         | https://github.com/vitest-dev/vitest                             | MIT        |
+| @vue/eslint-config-prettier   | https://github.com/vuejs/eslint-config-prettier                  | MIT        |
+| @vue/eslint-config-typescript | https://github.com/vuejs/eslint-config-typescript                | MIT        |
+| @vue/test-utils               | https://github.com/vuejs/test-utils                              | MIT        |
+| @vue/tsconfig                 | https://github.com/vuejs/tsconfig                                | MIT        |
+| eslint                        | https://github.com/eslint/eslint                                 | MIT        |
+| eslint-plugin-playwright      | https://github.com/playwright-community/eslint-plugin-playwright | Apache-2.0 |
+| eslint-plugin-vue             | https://github.com/vuejs/eslint-plugin-vue                       | MIT        |
+| jiti                          | https://github.com/unjs/jiti                                     | MIT        |
+| jsdom                         | https://github.com/jsdom/jsdom                                   | MIT        |
+| npm-run-all2                  | https://github.com/mysticatea/npm-run-all                        | MIT        |
+| prettier                      | https://github.com/prettier/prettier                             | MIT        |
+| sass                          | https://github.com/sass/dart-sass                                | MIT        |
+| typescript                    | https://github.com/Microsoft/TypeScript                          | Apache-2.0 |
+| vite                          | https://github.com/vitejs/vite                                   | MIT        |
+| vite-plugin-vue-devtools      | https://github.com/webfansplz/vite-plugin-vue-devtools           | MIT        |
+| vitest                        | https://github.com/vitest-dev/vitest                             | MIT        |
+| vue-tsc                       | https://github.com/vuejs/language-tools                          | MIT        |
+| @semantic-release/changelog   | https://github.com/semantic-release/changelog                    | MIT        |
+| @semantic-release/exec        | https://github.com/semantic-release/exec                         | MIT        |
+| @semantic-release/git         | https://github.com/semantic-release/git                          | MIT        |
+| semantic-release              | https://github.com/semantic-release/semantic-release             | MIT        |
 
 ## Javascript (for documents)
 
