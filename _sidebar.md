@@ -13,4 +13,3 @@
   - [- Documentation](/developers/documentation)
 - [Research Publications](/research)
 - [Licenses and Attributions](/licenses)
-- Changelog
