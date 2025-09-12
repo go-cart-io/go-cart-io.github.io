@@ -21,7 +21,7 @@ The development setup enables hot-reloading, allowing you to see code changes re
 
 3. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). If you plan to work with other remote extensions in VS Code, you may choose to install the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
 
-4. Lunch Visual Studio Code and open `cartogram-docker` folder.
+4. Launch Visual Studio Code and open `cartogram-docker` folder.
 
 5. Press F1 to open the command palette. Type "Reopen in Container" and select it.
 
