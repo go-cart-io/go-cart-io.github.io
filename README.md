@@ -22,12 +22,12 @@ To edit or view the guides locally:
 
    ```shell script
    cd go-cart-io.github.io
-   docsify serve .
+   npm run dev
    ```
 
 The documentation will be available at http://localhost:3000.
 
-## Updating contributors list
+## Updating contributor list
 
 1. Install dependencies:
 
@@ -40,3 +40,11 @@ The documentation will be available at http://localhost:3000.
    ```shell script
    npm run gen-contributors
    ```
+
+## Updating data attribution list
+
+Run script:
+
+```shell script
+npm run gen-attributions
+```
