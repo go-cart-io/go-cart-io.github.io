@@ -80,7 +80,16 @@ Unfortunately, many data sources are missing. If you know the original source, p
 
 ## C++ (for binary)
 
-TODO...
+| Library             | Link                                        | License                              |
+| ------------------- | ------------------------------------------- | ------------------------------------ |
+| Boost               | https://www.boost.org/                      | BSL-1.0                              |
+| CGAL                | https://www.cgal.org/                       | GPL-3.0-or-later / LGPL-3.0-or-later |
+| FFTW                | https://www.fftw.org/                       | GPL-2.0                              |
+| JSON for Modern C++ | https://json.nlohmann.me/                   | MIT                                  |
+| argparse            | https://github.com/p-ranav/argparse         | MIT                                  |
+| csv-parser          | https://github.com/vincentlaucsb/csv-parser | MIT                                  |
+| indicators          | https://github.com/p-ranav/indicators       | MIT                                  |
+| pkgconf             | https://pkgconf.org/                        | ISC                                  |
 
 ## Javascript (for frontend)
 
