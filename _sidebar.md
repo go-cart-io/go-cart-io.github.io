@@ -7,6 +7,7 @@
 - [Developer's Guides](/developers)
   - [- cartogram-cpp](/developers/cartogram-cpp)
   - [- cartogram-web / cartogram-docker](/developers/cartogram-web)
+  - [- Managing maps](/developers/manage-map)
   - [- Deployment Instructions](/developers/deploy)
   - [- Documentation](/developers/documentation)
 - [Research Publications](/research)
