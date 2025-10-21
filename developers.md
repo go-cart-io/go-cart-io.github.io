@@ -1,4 +1,4 @@
-# Developer's Guides
+# Developer Guides
 
 go-cart.io comprises multiple interconnected projects. Click each project name for its specific documentation:
 
