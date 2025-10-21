@@ -6,7 +6,7 @@ We strongly recommend using [VSCode](https://code.visualstudio.com/) for develop
 
 The development setup enables hot-reloading, allowing you to see code changes reflected in the website in real-time.
 
-1. Follow instrunctions in [Local Docker Deployment](/tutorials/local). If you plan to build and publish change to go-cart.io, you should create [Github personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) and specify the token in `.env`.
+1. Follow instrunctions in [Local Docker Deployment](/tutorials/local). If you plan to build and publish changes to go-cart.io, you should create [Github personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) and specify the token in `.env`.
 
    ```.env
    GITHUB_TOKEN=
