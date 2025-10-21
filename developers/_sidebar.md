@@ -10,5 +10,6 @@
   - [- Managing maps](/developers/manage-map)
   - [- Deployment Instructions](/developers/deploy)
   - [- Documentation](/developers/documentation)
+- [Troubleshooting](/troubleshooting)
 - [Research Publications](/research)
 - [Licenses and Attributions](/licenses)
