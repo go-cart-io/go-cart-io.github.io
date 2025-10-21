@@ -25,15 +25,30 @@ https
 
       const handlersBlock = match[1];
 
-      // Match only the *first-level* handler entry:
-      // "argentina": { "name": "Argentina",
-      const entryRegex = /"([^"]+)"\s*:\s*{[^{}]*?"name":\s*"([^"]+)"/g;
+      // Match only the *first-level* handler entries.
+      // Capture the handler object body so we can inspect for "hidden": True.
+      // Example matched block: "argentina": { "name": "Argentina", "hidden": True, ... },
+      const entryRegex = /"([^"]+)"\s*:\s*{([\s\S]*?)}\s*,?/g;
 
       let entries = [];
       let m;
       while ((m = entryRegex.exec(handlersBlock)) !== null) {
         const key = m[1]; // e.g. argentina
-        const name = m[2]; // e.g. Argentina
+        const body = m[2]; // the contents of the { ... } for this handler
+
+        // Extract name (support both single or double quotes around the key)
+        const nameMatch = body.match(/['"]name['"]\s*:\s*['"]([^'"]+)['"]/);
+        if (!nameMatch) continue;
+        const name = nameMatch[1];
+
+        // Skip entries where hidden is set to True (Python literal True)
+        // Support "hidden": True, 'hidden': True, or hidden: True
+        const hiddenMatch = body.match(/['"]?hidden['"]?\s*:\s*True/);
+        if (hiddenMatch) {
+          // skip this handler
+          continue;
+        }
+
         entries.push({ key, name });
       }
 

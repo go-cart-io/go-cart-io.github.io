@@ -72,7 +72,7 @@ Tharatipyakul, A., Perrault, S. T., Feng, C. C., & Gastner, M. T. (2024). Design
 
 Please check the `.md` file in the folder of the map you used as the data source.
 
-[filename](data-attributions.md ":include")
+[filename](licenses-data-attributions.md ":include")
 
 Unfortunately, many data sources are missing. If you know the original source, please let us know so we can add proper attribution. Thank you!
 
