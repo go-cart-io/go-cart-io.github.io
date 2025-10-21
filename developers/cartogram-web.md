@@ -43,9 +43,9 @@ The development setup enables hot-reloading, allowing you to see code changes re
    npm run dev:py
    ```
 
-You can now access the locally running go-cart.io website at [http://localhost:5000](http://localhost:5000). When you make changes to the code in devcontainer, their respective servers will reload automatically when you save your changes.
+You can now access the locally running go-cart.io website at [http://localhost:5005](http://localhost:5005). When you make changes to the code in devcontainer, their respective servers will reload automatically when you save your changes.
 
-In case you want to make changes to the code in the `cartogram-docker` repository, you have to do it outside devcontainer. Once done, press F1 to open the command palette and select "Rebuild and Reopen in Container".
+In case you want to make changes to the code in the `cartogram-docker` repository, you have to do it outside devcontainer. Once done, press Ctrl+Shift+P (or Cmd+Shift+P on macOS) to open the command palette and select "Rebuild and Reopen in Container".
 
 You may want to checkout dev branch for the latest (but error-prone) code.
 
